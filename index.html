@@ -1,1 +1,220 @@
-initial test
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <noscript><style type="text/css">.galleria {height:auto !important}</style></noscript> 
+  <style type="text/css">
+
+  	.porfolio-image {
+      margin: 2px;
+      max-width: 40%;
+      display: inline;
+  	}
+
+    .portfolio-header {
+      background: black;
+      margin:0;
+      padding-top: 20px;
+      padding-bottom: 20px;      
+    }
+    .portfolio-header h1 {
+      font-size: 500%;
+      color: white;
+      font-variant: small-caps;
+      text-align: center;
+    }
+
+    .portfolio-block {
+      background: rgb(200, 199, 238);
+      list-style-type: none;
+      margin: 0;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      display: block;
+    }
+
+    .contact-block {
+      margin-top: 20px;
+      color: white;
+    }
+    .contact-block ul {
+      list-style-type: none;
+      font-variant: small-caps;      
+    }
+    .contact-block ul > li {
+      display: block;
+    }
+
+  	figure {
+  		display: inline-block;
+  	}
+  	figcaption {
+  		font-style: italic;
+  		font-size: 80%;
+  		text-align: center;
+  	}
+
+    .portfolio-list .portfolio-block:nth-child(even) {
+      background: rgb(233, 221, 221);
+    }
+
+    .portfolio-image-block {
+      display: inline-block;
+      background-color: rgb(147, 149, 206);
+      padding: 3px;
+    }
+    .clear {
+      clear:both;
+    }
+
+    .portfolio-text {
+      padding: 10px;
+      display: inline-block;
+    }
+    .portfolio-text ul {
+      list-style-type: circle;
+    }
+    .portfolio-text > .title {
+      padding: 0;
+      margin: 0px 0px 5px 0px;
+      font-variant: small-caps;
+    }
+
+    .portfolio-footer {
+      display: block;
+      background: black;
+      height:30px;
+    }
+
+     .galleria{ min-height: 400px; }
+
+     .galleria-container.fullscreen {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 99999999;
+     }
+
+
+     .galleria-fullscreen-btn > .icon {
+        position: absolute;
+        right:6px;
+        top: 5px;
+        color: white;
+        cursor: pointer;
+        z-index: 99999999;        
+     }
+  </style>
+</head>
+<body>
+	  	<header class="portfolio-header row">
+        <img src="/img/profile-picture.jpg" class="col-md-1 col-xs-2">
+        <h1 class="col-md-offset-3 col-md-4">Portfolio</h1>
+        <div class="col-md-3 col-xs-12 contact-block">
+          <ul>
+            <li class="row"><span class="col-xs-4 col-md-5"><i class="fa fa-github"></i>&nbsp;Github</span><a class="col-xs-8 col-md-7" href="http://wwww.google.fr">pelos</a></li>
+            <li class="row"><span class="col-xs-4 col-md-5"><i class="fa fa-linkedin"></i>&nbsp;Linked-in</span><a class="col-xs-8 col-md-7" href="http://wwww.google.fr">pelos</a></li>
+            <li class="row"><span class="col-xs-4 col-md-5"><i class="fa fa-envelope"></i>&nbsp;Email</span><a class="col-xs-8 col-md-7" href="mailto:minette.alexandre@gmail.com">minette.alexandre@gmail.com</a></li>
+          </ul>
+        </div>
+      </header>
+	  	<ul class="list-group portfolio-list">
+
+
+        <li class="portfolio-block row">
+          <div class="portfolio-image-block col-md-6 col-xs-12">
+            <div class="galleria">
+              <img class="porfolio-image" src="/img/plugmystore/mapping.png">
+              <img class="porfolio-image" src="/img/plugmystore/manage.png">
+              <img class="porfolio-image" src="/img/plugmystore/startpage.png">
+            </div>            
+          </div>
+          <div class="portfolio-text col-md-5 col-xs-12">
+            <h2 class="title">
+             <a href="http://plugmystore.com">Plugmystore.com</a>
+            </h2>
+            <p>
+              During my work at <a href="http://plugmystore.com">Plugmystore.com</a> I was in charge of the front-end and of the back-end interface.
+            </p>
+            <p>Technologies :</p>
+            <ul>
+              <li>Javascript / CSS3 / HTML5</li>
+              <li>Knockout.js</li>
+              <li>Bootstrap</li>
+              <li>PHP5 / Doctrine / Zend Framework 2</li>
+            </ul>
+          </div>
+        </li>
+
+
+	  		<li class="portfolio-block row">
+	  			<div class="portfolio-image-block col-md-6 col-xs-12">
+            <div class="galleria">
+              <img class="porfolio-image" alt="Download Interface"
+
+              data-big="/img/fproxy/download.png"
+              src="/img/fproxy/download.png">
+              <img class="porfolio-image" alt="External Links Interface" src="/img/fproxy/external-link.png">
+              <img class="porfolio-image" alt="File Sharing Interface"  src="/img/fproxy/filesharing.png">
+              <img class="porfolio-image" alt="Status Interface" src="/img/fproxy/new-statusbar.png">
+              <img class="porfolio-image" alt="Startpage Interface" src="/img/fproxy/startpage.png">
+            </div>
+          </div>
+          <div class="portfolio-text col-md-5 col-xs-12">
+            <h2 class="title">Open-Source Contribution : <a target="_blank" href="https://freenetproject.org">Freenet</a> Theme</h2>
+            <p>
+              A modern theme for the Freenet FProxy Interface.
+              <br>
+              <a target="_blank" href="https://freenetproject.org">Freenet Website</a>
+            </p>
+            <p>Technologies :</p>
+            <ul>
+              <li>CSS3 / HTML5</li>
+            </ul>            
+          </div>
+	  		</li>
+
+      <li class="portfolio-block row">
+          <div class="portfolio-image-block col-md-6 col-xs-12">
+            <div class="galleria">
+              <img class="porfolio-image" alt="HEC Project Study - Rezabella Startpage Screenshot" src="/img/hec/rezabella.jpg">
+            </div>
+          </div>
+          <div class="portfolio-text col-md-5 col-xs-12">
+            <h2 class="title">HEC Project Study</h2>
+            <p>HEC School Project Study.</p>
+            <p>Technologies :</p>
+            <ul>
+              <li>CSS3 / HTML5 / Javascript</li>
+              <li>Django (Python)</li>
+            </ul>            
+          </div>
+        </li>
+           
+	  	</ul>
+
+      <footer class="portfolio-footer">
+
+      </footer>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/galleria-1.3.3.min.js"></script>
+<script type="text/javascript">
+  Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.js');
+  
+  $('.galleria').galleria();
+
+  Galleria.ready(function() {
+      var gallery = this;
+      $(this._target).find('.galleria-container').append('<div class="galleria-fullscreen-btn"><i class="icon fa fa-arrows-alt"></i></div>');
+      $(this._target).find('.galleria-fullscreen-btn').click(function () {
+          gallery.toggleFullscreen();
+      });
+  });
+</script>
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
