@@ -4,115 +4,12 @@
   <title>Portfolio</title>
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link href="/css/font-awesome.min.css" rel="stylesheet">
-  <noscript><style type="text/css">.galleria {height:auto !important}</style></noscript> 
-  <style type="text/css">
-
-  	.porfolio-image {
-      margin: 2px;
-      max-width: 40%;
-      display: inline;
-  	}
-
-    .portfolio-header {
-      background: black;
-      margin:0;
-      padding-top: 20px;
-      padding-bottom: 20px;      
-    }
-    .portfolio-header h1 {
-      font-size: 500%;
-      color: white;
-      font-variant: small-caps;
-      text-align: center;
-    }
-
-    .portfolio-block {
-      background: rgb(200, 199, 238);
-      list-style-type: none;
-      margin: 0;
-      padding-bottom: 15px;
-      padding-top: 15px;
-      display: block;
-    }
-
-    .contact-block {
-      margin-top: 20px;
-      color: white;
-    }
-    .contact-block ul {
-      list-style-type: none;
-      font-variant: small-caps;      
-    }
-    .contact-block ul > li {
-      display: block;
-    }
-
-  	figure {
-  		display: inline-block;
-  	}
-  	figcaption {
-  		font-style: italic;
-  		font-size: 80%;
-  		text-align: center;
-  	}
-
-    .portfolio-list .portfolio-block:nth-child(even) {
-      background: rgb(233, 221, 221);
-    }
-
-    .portfolio-image-block {
-      display: inline-block;
-      background-color: rgb(147, 149, 206);
-      padding: 3px;
-    }
-    .clear {
-      clear:both;
-    }
-
-    .portfolio-text {
-      padding: 10px;
-      display: inline-block;
-    }
-    .portfolio-text ul {
-      list-style-type: circle;
-    }
-    .portfolio-text > .title {
-      padding: 0;
-      margin: 0px 0px 5px 0px;
-      font-variant: small-caps;
-    }
-
-    .portfolio-footer {
-      display: block;
-      background: black;
-      height:30px;
-    }
-
-     .galleria{ min-height: 400px; }
-
-     .galleria-container.fullscreen {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top:0;
-        left:0;
-        z-index: 99999999;
-     }
-
-
-     .galleria-fullscreen-btn > .icon {
-        position: absolute;
-        right:6px;
-        top: 5px;
-        color: white;
-        cursor: pointer;
-        z-index: 99999999;        
-     }
-  </style>
+  <noscript><style type="text/css">.galleria {height:auto !important}</style></noscript>
+  <link href="/css/portfolio.css" rel="stylesheet">
 </head>
 <body>
 	  	<header class="portfolio-header row">
-        <img src="/img/profile-picture.png" class="col-md-1 col-xs-2">
+        <img src="/img/profile-picture.jpg" class="col-md-1 col-xs-2">
         <h1 class="col-md-offset-3 col-md-4">Portfolio</h1>
         <div class="col-md-3 col-xs-12 contact-block">
           <ul>
@@ -122,22 +19,70 @@
           </ul>
         </div>
       </header>
-	  	<ul class="list-group portfolio-list">
-
+	  	
+      <ul class="list-group portfolio-list">
         <li class="portfolio-block row">
           <div class="portfolio-image-block col-md-6 col-xs-12">
             <div class="galleria">
-              <img class="porfolio-image" src="/img/bboxxcrm/crm-clients.png">
-              <img class="porfolio-image" src="/img/bboxxcrm/crm-dashboard.png">
-              <img class="porfolio-image" src="/img/bboxxcrm/crm-appform.png">
-              <img class="porfolio-image" src="/img/bboxxcrm/crm-payplan.png">
-              <img class="porfolio-image" src="/img/bboxxcrm/crm-search.png">
-              <img class="porfolio-image" src="/img/bboxxcrm/crm-signup.png">
+              <img class="porfolio-image" alt="KJUS homepage" src="/img/kjus/homepage.png">
+              <img class="porfolio-image" alt="KJUS product page" src="/img/kjus/product-page.png">
+              <img class="porfolio-image" alt="KJUS jacket" src="/img/kjus/product-jacket.png">
+              <img class="porfolio-image" alt="KJUS checkout" src="/img/kjus/checkout.png">
             </div>            
           </div>
           <div class="portfolio-text col-md-5 col-xs-12">
             <h2 class="title">
-             <a href="http://bboxx.co.uk">BBOXX</a> CRM Application<br>
+             <a href="http://kjus.com">KJUS.com (2016)</a><br>
+            </h2>
+            <p>
+              KJUS.com has been though a lot of redesign to update and modernise their online store. I've participated of the redesign of a lot of components (menu, product pages, checkout...).
+            </p>
+            <p>Technologies:</p>
+            <ul>
+              <li>Rails (Spree), Symfony/PHP5</li>
+              <li>Tested with Rspec/PHPUnit</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="portfolio-block row">
+          <div class="portfolio-image-block col-md-6 col-xs-12">
+            <div class="galleria">
+              <img class="porfolio-image" alt="Surfdome homepage" src="/img/surfdome/homepage.png">
+              <img class="porfolio-image" alt="Surfdome detailed product page" src="/img/surfdome/product-bag.png">
+              <img class="porfolio-image" alt="Surfdome product list page" src="/img/surfdome/products-flip-flops.png">
+            </div>            
+          </div>
+          <div class="portfolio-text col-md-5 col-xs-12">
+            <h2 class="title">
+             <a href="http://surfdome.com">Surfdome.com (2016)</a><br>
+            </h2>
+            <p>
+              Surfdome.com launched a completely new website from scratch to update their legacy application.<br>
+              I participated to the US and UK launch by by integrating and developping a lot of the store features.
+            </p>
+            <p>Technologies:</p>
+            <ul>
+              <li>Angular.js, Node.js</li>
+              <li>Tested with Protractor/Mocha.js</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="portfolio-block row">
+          <div class="portfolio-image-block col-md-6 col-xs-12">
+            <div class="galleria">
+              <img class="porfolio-image" alt="BBOX CRM clients" src="/img/bboxxcrm/crm-clients.png">
+              <img class="porfolio-image" alt="BBOX CRM dashboard" src="/img/bboxxcrm/crm-dashboard.png">
+              <img class="porfolio-image" alt="BBOX CRM application form" src="/img/bboxxcrm/crm-appform.png">
+              <img class="porfolio-image" alt="BBOX CRM customer payplan" src="/img/bboxxcrm/crm-payplan.png">
+              <img class="porfolio-image" alt="BBOX CRM client search" src="/img/bboxxcrm/crm-search.png">
+              <img class="porfolio-image" alt="BBOX CRM client signup" src="/img/bboxxcrm/crm-signup.png">
+            </div>            
+          </div>
+          <div class="portfolio-text col-md-5 col-xs-12">
+            <h2 class="title">
+             <a href="http://bboxx.co.uk">BBOXX</a> CRM Application (2014/2015)<br>
              <small>(Internal Application, no links available)</small>
             </h2>
             <p>
@@ -145,9 +90,9 @@
               This application is currently used in 20 shops in Kenya and Rwanda and has been developed with unique challenges in terms of connectivity.<br>
               A lot of work has been done on the UI to make sure that the data entry is matching the expectations of the company.<br>
               This application replaced an internal Excel based CRM and a lot of work was done on backward-compatibility and maintenance.
-              <small>(Some content is blurred on the screenshots for privacy reasons.)</small>
+              <br><small>(Some content is blurred on the screenshots for privacy reasons.)</small>
             </p>
-            <p>Technologies :</p>
+            <p>Technologies:</p>
             <ul>
               <li>Angular.js, Node-webkit, HTML5 Offline Cache</li>
               <li>PouchDb</li>
@@ -159,21 +104,21 @@
         <li class="portfolio-block row">
           <div class="portfolio-image-block col-md-6 col-xs-12">
             <div class="galleria">
-              <img class="porfolio-image" src="/img/bboxxsmart/smart-dashboard.png">
-              <img class="porfolio-image" src="/img/bboxxsmart/smart-product.png">              
-              <img class="porfolio-image" src="/img/bboxxsmart/smart-map.png">
+              <img class="porfolio-image" alt="SMART Dashboard" src="/img/bboxxsmart/smart-dashboard.png">
+              <img class="porfolio-image" alt="SMART Product" src="/img/bboxxsmart/smart-product.png">              
+              <img class="porfolio-image" alt="SMART Map" src="/img/bboxxsmart/smart-map.png">
             </div>            
           </div>
           <div class="portfolio-text col-md-5 col-xs-12">
             <h2 class="title">
-             <a href="http://smart.bboxx.co.uk">BBOXX SMART Dashboard</a><br>
+             <a href="http://smart.bboxx.co.uk">BBOXX SMART Dashboard (2014/2015)</a><br>
             </h2>
             <p>
               The BBOXX SMART Dashboard is a medium-sized project, I've worked on during my time at BBOXX. The main goal of this project was to enable the smart units on the ground to be managed centrally through a web interface.<br>
               This project was built with Rails on the backend and Angular.js on the front-end.
               <small>(Some content is blurred on the screenshots for privacy reasons.)</small>
             </p>
-            <p>Technologies :</p>
+            <p>Technologies:</p>
             <ul>
               <li>Angular.js, TML5 Offline Cache</li>
               <li>Rails (Ruby), Fat-free CRM</li>
@@ -191,12 +136,12 @@
           </div>
           <div class="portfolio-text col-md-5 col-xs-12">
             <h2 class="title">
-             <a href="http://plugmystore.com">Plugmystore.com</a>
+             <a href="http://plugmystore.com">Plugmystore.com (2013)</a>
             </h2>
             <p>
-              During my internship at <a href="http://plugmystore.com">Plugmystore.com</a> I was in charge of the front-end and of the back-end interface.
+              At <a href="http://plugmystore.com">Plugmystore.com</a> I was in charge of the front-end and of the back-end interface.
             </p>
-            <p>Technologies :</p>
+            <p>Technologies:</p>
             <ul>
               <li>Javascript / CSS3 / HTML5</li>
               <li>Knockout.js</li>
@@ -205,32 +150,6 @@
             </ul>
           </div>
         </li>
-
-
-
-        <li class="portfolio-block row">
-          <div class="portfolio-image-block col-md-6 col-xs-12">
-            <div class="galleria">
-              <img class="porfolio-image" src="/img/geogames/current.png">
-              <img class="porfolio-image" src="/img/geogames/monitor.png">
-              <img class="porfolio-image" src="/img/geogames/profile.png">
-            </div>            
-          </div>
-          <div class="portfolio-text col-md-5 col-xs-12">
-            <h2 class="title">
-             <a href="http://geogames.fr">Geogames.fr</a>
-            </h2>
-            <p>
-              <a href="http://geogames.fr">Geogames.fr</a> was a project similar to Ingress created by Google. The main goal was to create a new type of geolocalized games inspired my modern video games.
-            </p>
-            <p>Technologies :</p>
-            <ul>
-              <li>Javascript (Jquery, Angular.js) / CSS3 (Bootstrap 3) / HTML5</li>
-              <li>Python (Django)</li>
-            </ul>
-          </div>
-        </li>    
-
 
 	  		<li class="portfolio-block row">
 	  			<div class="portfolio-image-block col-md-6 col-xs-12">
@@ -246,77 +165,20 @@
             </div>
           </div>
           <div class="portfolio-text col-md-5 col-xs-12">
-            <h2 class="title">Open-Source Contribution : <a target="_blank" href="https://freenetproject.org">Freenet</a> Theme</h2>
+            <h2 class="title">Open-Source Contribution: <a target="_blank" href="https://freenetproject.org">Freenet</a> Theme (2010)</h2>
             <p>
               A modern theme for the Freenet FProxy Interface.
               <br>
               <a target="_blank" href="https://freenetproject.org">Freenet Website</a>
             </p>
-            <p>Technologies :</p>
+            <p>Technologies:</p>
             <ul>
               <li>CSS3 / HTML5</li>
             </ul>            
           </div>
 	  		</li>
-
-      <li class="portfolio-block row">
-          <div class="portfolio-image-block col-md-6 col-xs-12">
-            <div class="galleria">
-              <img class="porfolio-image" alt="HEC Project Study - Rezabella Startpage Screenshot" src="/img/hec/rezabella.jpg">
-            </div>
-          </div>
-          <div class="portfolio-text col-md-5 col-xs-12">
-            <h2 class="title">HEC Project Study</h2>
-            <p>HEC School Project Study.</p>
-            <p>Technologies :</p>
-            <ul>
-              <li>CSS3 / HTML5 / Javascript</li>
-              <li>Django (Python)</li>
-            </ul>            
-          </div>
-        </li>
-
-      <li class="portfolio-block row">
-          <div class="portfolio-image-block col-md-6 col-xs-12">
-            <div class="galleria">
-              <a href="http://www.youtube.com/watch?v=Uh6n3SAbQx4">
-                <img src="http://img.youtube.com/vi/Uh6n3SAbQx4/0.jpg">
-              </a>
-            </div>
-          </div>
-          <div class="portfolio-text col-md-5 col-xs-12">
-            <h2 class="title">CSS3 Graph Experiment</h2>
-            <p>A Graph made with only CSS3 Elements (no SVG, no images).</p>
-            <p>Technologies :</p>
-            <ul>
-              <li>CSS3 / HTML5 / Javascript</li>
-              <li>Knockout.js</li>
-              <li>Django (Python)</li>
-            </ul>            
-          </div>
-        </li>        
-           
-   <li class="portfolio-block row">
-          <div class="portfolio-image-block col-md-6 col-xs-12">
-            <div class="galleria">
-              <img class="porfolio-image" alt="" src="/img/sf2/boilerplate.png">
-            </div>
-          </div>
-          <div class="portfolio-text col-md-5 col-xs-12">
-            <h2 class="title">Symfony2 Boilerplate</h2>
-            <p>Technologies :</p>
-            <ul>
-              <li>CSS3 / HTML5 / Javascript</li>
-              <li>Symfony2 (PHP5)</li>
-            </ul>            
-          </div>
-        </li>
-           
-
 	  	</ul>
-      <footer class="portfolio-footer">
 
-      </footer>
 <script src="/js/jquery.min.js"></script>
 <script src="/js/galleria-1.3.3.min.js"></script>
 <script type="text/javascript">
